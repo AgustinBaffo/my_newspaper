@@ -142,12 +142,12 @@ header .icon-search img{
 #weather .box-temperature{
 	padding: 10px 0;	
 	float: left;
-	width: 50%;
+	width: 60%;
 }
 #weather .box-other{
 	padding: 10px 0;	
 	float: right;
-	width: 50%;	
+	width: 40%;	
 }
 #weather .temperature, #weather .other-weather{
 	display: inline-block;
@@ -162,7 +162,7 @@ header .icon-search img{
 
 #weather .temperature .value{
 	display: inline;
-	font-size: 64px;
+	font-size: 56px;
 	vertical-align: top;
 }
 #weather .temperature .unit{
@@ -291,11 +291,16 @@ header .icon-search img{
 
 }
 
-footer .box{
+footer .box-1{
 	padding: 10px 0;
 	float: left;
 	width: 50%;
 	max-width: 250px;
+}
+footer .box-2{
+	padding: 10px 0;
+	float: left;
+	width: 100%;
 }
 footer img{
 	width: 100%;
