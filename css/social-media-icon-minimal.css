@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+}
+.social-icons p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+.social-icons h1,
+.social-icons h2,
+.social-icons h3,
+.social-icons h4,
+.social-icons h5,
+.social-icons h6 {
+    margin:  1% 0 1% 0;
+}
+.social-icons ._12 {
+    font-size: 1.2em;
+}
+.social-icons ._14 {
+    font-size: 1.4em;
+}
+.social-icons ul {
+    padding:0;
+    list-style: none;
+}
+.social-icons .footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+.social-icons .social-icon {
+    color: #000;
+}
+.social-icons ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.social-icons .fa-facebook {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.social-icons .fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.social-icons .fa-twitter {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.social-icons .fa-twitter:hover {
+    background-color: #00aced;
+}
+.social-icons .fa-rss {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.social-icons .fa-rss:hover {
+    background-color: #eb8231;
+}
+.social-icons .fa-youtube {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.social-icons .fa-youtube:hover {
+    background-color: #e64a41;
+}
+.social-icons .fa-linkedin {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.social-icons .fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.social-icons .fa-github {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+
+.footer-social-icons .social-icons .fa-facebook,
+.footer-social-icons .social-icons .fa-github,
+.footer-social-icons .social-icons .fa-rss,
+.footer-social-icons .social-icons .fa-youtube,
+.footer-social-icons .social-icons .fa-linkedin,
+.footer-social-icons .social-icons .fa-github
+{
+    padding:10px 14px;
+}
+.footer-social-icons .social-icons .fa-twitter {
+    padding:10px 12px;
+}
+
+.showcase-social-icons .social-icons .fa-facebook,
+.showcase-social-icons .social-icons .fa-github,
+.showcase-social-icons .social-icons .fa-rss,
+.showcase-social-icons .social-icons .fa-youtube,
+.showcase-social-icons .social-icons .fa-linkedin,
+.showcase-social-icons .social-icons .fa-github
+{
+    padding:3px 5px;
+}
+.showcase-social-icons .social-icons .fa-twitter {
+    padding:3px 4px;
+}
+
+
+
+
+
+.social-icons .fa-github:hover {
+    background-color: #5a32a3;
+}

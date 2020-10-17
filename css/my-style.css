@@ -19,6 +19,9 @@ header{
 	overflow: hidden;
 	min-height: 40px;
 }
+header nav{
+	display: none;
+}
 header ul{
 	margin: 0;
 	padding: 0;
@@ -50,7 +53,7 @@ header .menu-icon img{
 	filter: invert(70%);
 }
 header .icon-burger img{
-	display: none;
+	display: inline;
 	float: left;
 }
 
@@ -89,17 +92,53 @@ header .icon-search img{
 	padding: 10px 0;
 	border-bottom: 1px solid grey;
 	width: 100%;
-	/*background-image: url("../img/showcase_background.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 90%;*/
-}
-#showcase .img_logo{
 	margin-top: 10px;
 }
-#showcase p{
+#showcase .img-logo{
 	margin-top: 10px;
 }
+/* #showcase p{
+	margin-top: 10px;
+} */
+
+#showcase .showcase-social-icons{
+	display: block;
+	margin-top: 10px;
+}
+
+#showcase .date{
+	font-family: sans-serif; 
+	color: #666;
+}
+#showcase .desktop-date{
+	display: none;
+}
+#showcase .mobile-date{
+	display: block;
+	margin-top: 16px;
+	text-align: left;
+	padding: 10px 16px 4px 16px;
+	
+}
+
+
+#static-news{
+	min-height: 180px;
+	text-align: center;
+	padding: 10px 0;
+	border-bottom: 1px solid grey;
+	width: 100%;
+	margin-top: 10px;
+
+}
+
+
+
+
+
+
+
+
 
 
 #main{
@@ -107,9 +146,9 @@ header .icon-search img{
 
 }
 #main .box{
-	float: left;
+	float:none;
 	text-align: center;
-	width: 30%;
+	width: 100%;
 	padding: 10px 0;
 }
 #main img{
@@ -138,15 +177,21 @@ header .icon-search img{
 }
 #secondary .box{
 	display: flex;
-	align-items:top;
-	float: left;
+	float:none;
 	text-align: left;
-	width: 30%;
+	width: 100%;
+	padding: 10px 0;
+	align-items:top;
 	padding: 10px 0;
 }
-#secondary img{
+/* #secondary img{
 	display: inline;
 	width: 40%;
+} */
+#secondary img{
+	display: inline;
+	width:40%;
+	height: auto;
 }
 #secondary h3{
 	display: inline;
@@ -158,28 +203,36 @@ header .icon-search img{
 }
 
 
-/*mobile*/
-@media(max-width: 768px){
-	#main img{
-		width: 100%;
+/*tablet*/
+@media(min-width: 768px){
+	
+	#showcase .date, #showcase ul{
+		display: inline-block;
 	}
-	header nav{
+	#showcase .mobile-date{
 		display: none;
 	}
+	
+	#showcase ul{
+	text-align: right;
+	}
 	header .icon-burger img{
-		display: inline;
+		display: none;
 	}
 
 	#main .box{
-		float:none;
-		text-align: left;
-		width: 100%;
+		float: left;
+		width: 30%;		
 	}
 	#secondary .box{
-		float:none;
+		display: flex;
+		align-items:top;
+		float: left;
 		text-align: left;
-		width: 100%;
+		width: 30%;
+		padding: 10px 0;
 	}
+
 }
 
 
