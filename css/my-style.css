@@ -2,22 +2,43 @@
     font-family: AbrilFatface;
 	src: url(../fonts/AbrilFatface-Regular.ttf);
 } 
-
-
-
 .container{
-	width: 85%;
-	margin: auto;
-	overflow: hidden;
+	display: flex;
+	/* margin: auto;
+	overflow: hidden; */
 }
-
+.container .container-bottom{
+	align-items: flex-end;
+}
 header{
 	background-color: #333;
 	list-style-type: none;
 	margin: 0;
 	padding: 10px 0px;
 	overflow: hidden;
-	min-height: 40px;
+}
+header .container{
+	max-height: 50px;
+}
+header .box-1{	
+	display: flex;	
+	flex: 1;
+}
+header .box-2{
+	display: flex;
+	flex: 4;
+	justify-content: flex-end;
+}
+header .menu-icon img{
+	height: 40px;
+	filter: invert(70%);
+}
+header .icon-burger img{
+	display: inline;
+	margin: 0 10px;
+}
+header .button-login{
+	margin: 0 10px;
 }
 header nav{
 	display: none;
@@ -29,7 +50,6 @@ header ul{
 header li{
 	float: left;
 	display: inline;
-	/* border-right:1px solid #bbb; */
 }
 header li a {
 	display: block;
@@ -38,35 +58,11 @@ header li a {
 	padding: 14px 16px;
 	text-decoration: none;
 }
-
 header li a:hover:not(.active) {
 	background-color: #111;
 }
-
 header li .active {
-	/* background-color: #4CAF50; */
 	background-color: #585858;
-}
-
-header .menu-icon img{
-	height: 40px;
-	filter: invert(70%);
-}
-header .icon-burger img{
-	display: inline;
-	float: left;
-}
-
-header .button-login{
-	float: right;
-	margin: 0 10px;
-}
-
-header .icon-search img{
-	float: right;
-}
-.my-header .logo img{
-	height: 100px;
 }
 .menu-button{
 	background-color: #EEE;
@@ -86,6 +82,8 @@ header .icon-search img{
 }
 
 
+
+
 #showcase{
 	min-height: 180px;
 	text-align: center;
@@ -94,222 +92,68 @@ header .icon-search img{
 	width: 100%;
 	margin-top: 10px;
 }
+#showcase .container{
+	margin-top: 10px;
+	flex-direction: column;
+}
 #showcase .img-logo{
 	margin-top: 10px;
 }
-/* #showcase p{
-	margin-top: 10px;
-} */
-
-#showcase .showcase-social-icons{
+#showcase .box-1{
 	display: block;
 	margin-top: 10px;
 }
-
+#showcase .box-2{
+	display: block;
+}
 #showcase .date{
 	font-family: sans-serif; 
 	color: #666;
-}
-#showcase .desktop-date{
-	display: none;
-}
-#showcase .mobile-date{
 	display: block;
 	margin-top: 16px;
 	text-align: left;
-	padding: 10px 16px 4px 16px;
-	
+	padding: 0 16px 4px 16px;	
 }
 
 
-
-
-
-
-
-#static-news{
-	padding: 0;
-	width: 100%;
-}
-
-#weather{
-	min-height: 50px;
-	padding: 10px 0;
-	border-bottom: 1px solid grey;
-	width: 100%;
-}
-
-#weather .box-temperature{
-	padding: 10px 0;	
-	float: left;
-	width: 60%;
-}
-#weather .box-other{
-	padding: 10px 0;	
-	float: right;
-	width: 40%;	
-}
-#weather .temperature, #weather .other-weather{
-	display: inline-block;
-}
-#weather .temperature img{
-	display: inline;
-	height: 100%;
-}
-#weather .temperature .temp-value{
-	display: inline-flex;
-}
-
-#weather .temperature .value{
-	display: inline;
-	font-size: 56px;
-	vertical-align: top;
-}
-#weather .temperature .unit{
-	display: inline;
-	vertical-align: top;
-	font-size: 32px;
-}
-#weather .other-weather .prep,
-#weather .other-weather .hum,
-#weather .other-weather .wind{
-	display: inline-block;
-	padding: 2px;
-	font-size: 18px;
-} 
-
-
-
-
-
-
-
-
-#main{
-	margin-top: 20px;
-	border-bottom: 1px solid grey;
-}
-#main .box{
-	float:none;
-	text-align: center;
-	width: 100%;
-	padding: 10px 0;
-	border-bottom: 1px solid grey;
-}
-#main .box:last-child{
-	border-bottom: 0;
-}
-#main img{
-	width: 100%;
-}
-#main h2{
-	font-family: 'AbrilFatface', Arial, Helvetica, sans-serif; 
-	font-size: 24px;
-	font-weight: bold; 
-	line-height: normal;
-	/* letter-spacing: 1px; */
-	padding: 8px;
-}
-#main p{
-	font-family: sans-serif; 
-	text-align: left;
-	font-size: 16px;
-	line-height: normal;
-	padding-top: 8px;
-}
-
-
-
-#secondary{
-	margin-top: 20px;
-	border-bottom: 1px solid grey;
-}
-#secondary .box{
-	display: flex;
-	float:none;
-	text-align: left;
-	width: 100%;
-	padding: 10px 0;
-	align-items:top;
-	padding: 10px 0;
-	border-bottom: 1px solid grey;
-}
-
-#secondary .box:last-child{
-	border-bottom: 0;
-}
-
-/* #secondary img{
-	display: inline;
-	width: 40%;
-} */
-#secondary img{
-	display: inline;
-	width:40%;
-	height: auto;
-	max-height: 150px;
-}
-#secondary h3{
-	display: inline;
-	font-family: 'AbrilFatface', Arial, Helvetica, sans-serif; 
-	text-align: left;
-	font-size: 16px;
-	line-height: normal;
-	padding-left: 5px;
-}
-
-
-/*tablet*/
-@media(min-width: 768px){
-	
-	#showcase .date, #showcase ul{
-		display: inline-block;
-	}
-	#showcase .mobile-date{
-		display: none;
-	}
-	
-	#showcase ul{
-	text-align: right;
-	}
+@media(min-width: 768px){	
 	header .icon-burger img{
 		display: none;
+	}	
+	header nav{
+		display: inline-block;
+	}	
+	header .box-1{	
+		display: flex;	
+		flex: 10;
 	}
-
-	#main .box{
-		float: left;
-		width: 30%;		
-	}
-	#secondary .box{
+	header .box-2{
 		display: flex;
-		align-items:top;
-		float: left;
-		text-align: left;
-		width: 30%;
-		padding: 10px 0;
+		flex: 1;
+		justify-content: flex-end;
 	}
 
-}
 
-footer .box-1{
-	padding: 10px 0;
-	float: left;
-	width: 50%;
-	max-width: 250px;
+	#showcase .container{
+		flex-direction: row;
+	}
+	#showcase{
+		min-height: 160px;
+	}
+	#showcase .box-1{
+		display: flex;
+		order: 1;
+		padding: 10px 0;
+		width: 50%;
+	}
+	
+	#showcase .box-2{
+		display: flex;
+		order: 2;
+		padding: 10px 0;
+		margin-right: 20px;
+		width: 50%;      
+		justify-content: flex-end;
+		align-self: flex-end;
+	}
 }
-footer .box-2{
-	padding: 10px 0;
-	float: left;
-	width: 100%;
-}
-footer img{
-	width: 100%;
-}
-footer p{
-	padding-bottom: 5px;
-	font-size: 14px;
-}
-
-
- 
-
