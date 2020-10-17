@@ -122,17 +122,65 @@ header .icon-search img{
 }
 
 
+
+
+
+
+
 #static-news{
-	min-height: 180px;
-	text-align: center;
+	padding: 0;
+	width: 100%;
+}
+
+#weather{
+	min-height: 50px;
 	padding: 10px 0;
 	border-bottom: 1px solid grey;
 	width: 100%;
-	margin-top: 10px;
+}
 
+#weather .box-temperature{
+	padding: 10px 0;	
+	float: left;
+	width: 50%;
+}
+#weather .box-other{
+	padding: 10px 0;	
+	float: right;
+	width: 50%;	
 }
 
 
+
+#weather .temperature, #weather .other-weather{
+	display: inline-block;
+}
+
+#weather .temperature img{
+	display: inline;
+	height: 100%;
+}
+#weather .temperature .temp-value{
+	display: inline-flex;
+}
+
+#weather .temperature .value{
+	display: inline;
+	font-size: 64px;
+	vertical-align: top;
+}
+#weather .temperature .unit{
+	display: inline;
+	vertical-align: top;
+	font-size: 32px;
+}
+#weather .other-weather .prep,
+#weather .other-weather .hum,
+#weather .other-weather .wind{
+	display: inline-block;
+	padding: 2px;
+	font-size: 18px;
+} 
 
 
 
@@ -143,7 +191,6 @@ header .icon-search img{
 
 #main{
 	margin-top: 20px;
-
 }
 #main .box{
 	float:none;
