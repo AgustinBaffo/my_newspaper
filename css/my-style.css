@@ -44,7 +44,7 @@ header nav{
 	display: none;
 }
 header ul{
-	margin: 0;
+	margin: 0 10px;
 	padding: 0;
 }
 header li{
@@ -80,12 +80,8 @@ header li .active {
 	background-color: #888;
 	color: white;
 }
-
-
-
-
 #showcase{
-	min-height: 180px;
+	min-height: 140px;
 	text-align: center;
 	padding: 10px 0;
 	border-bottom: 1px solid grey;
@@ -96,8 +92,19 @@ header li .active {
 	margin-top: 10px;
 	flex-direction: column;
 }
-#showcase .img-logo{
+#showcase .container .container-img{
 	margin-top: 10px;
+	flex-direction: column;
+}
+#showcase .img-logo img{
+	margin-top: 10px;
+	width: 100%;
+}
+#showcase .box-img{
+	display: block;
+	width: 50%;
+	align-self: center;
+	min-width: 280px;  
 }
 #showcase .box-1{
 	display: block;
@@ -114,7 +121,28 @@ header li .active {
 	text-align: left;
 	padding: 0 16px 4px 16px;	
 }
-
+footer .box-1{
+	padding: 10px 0;
+	width: 50%;
+	max-width: 250px;
+}
+footer .box-2{
+	display: inline-block;
+	padding: 10px 5px;
+	width: 50%;
+}
+footer .box-3{
+	display: flex;
+	padding: 10px 0;
+	width: 100%;
+}
+footer img{
+	width: 100%;
+}
+footer p{
+	padding-bottom: 5px;
+	font-size: 14px;
+}
 
 @media(min-width: 768px){	
 	header .icon-burger img{
@@ -132,13 +160,11 @@ header li .active {
 		flex: 1;
 		justify-content: flex-end;
 	}
-
-
 	#showcase .container{
 		flex-direction: row;
 	}
 	#showcase{
-		min-height: 160px;
+		min-height: 140px;
 	}
 	#showcase .box-1{
 		display: flex;
@@ -146,7 +172,6 @@ header li .active {
 		padding: 10px 0;
 		width: 50%;
 	}
-	
 	#showcase .box-2{
 		display: flex;
 		order: 2;
@@ -155,5 +180,11 @@ header li .active {
 		width: 50%;      
 		justify-content: flex-end;
 		align-self: flex-end;
+	}
+	#showcase .img-logo img{
+		width: 390px;
+	}  
+	#showcase .box-img{
+		width: 100%;
 	}
 }
