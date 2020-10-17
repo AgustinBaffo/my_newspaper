@@ -15,9 +15,9 @@ header{
 	background-color: #333;
 	list-style-type: none;
 	margin: 0;
-	padding: 8px 0px;
+	padding: 10px 0px;
 	overflow: hidden;
-	min-height: 50px;
+	min-height: 40px;
 }
 header ul{
 	margin: 0;
@@ -43,6 +43,43 @@ header li a:hover:not(.active) {
 header li .active {
 	/* background-color: #4CAF50; */
 	background-color: #585858;
+}
+
+header .menu-icon img{
+	height: 40px;
+	filter: invert(70%);
+}
+header .icon-burger img{
+	display: none;
+	float: left;
+}
+
+header .button-login{
+	float: right;
+	margin: 0 10px;
+}
+
+header .icon-search img{
+	float: right;
+}
+.my-header .logo img{
+	height: 100px;
+}
+.menu-button{
+	background-color: #EEE;
+	border: 2px solid #555;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	height: 40px;
+	width: 80px;
+}  
+.menu-button:hover {
+	background-color: #888;
+	color: white;
 }
 
 
@@ -73,9 +110,9 @@ header li .active {
 	float: left;
 	text-align: center;
 	width: 30%;
-	padding: 10px;
+	padding: 10px 0;
 }
-#main .img{
+#main img{
 	width: 100%;
 }
 #main h2{
@@ -89,10 +126,37 @@ header li .active {
 #main p{
 	font-family: sans-serif; 
 	text-align: left;
-	font-size: px;
+	font-size: 16px;
 	line-height: normal;
 	padding-top: 8px;
 }
+
+
+
+#secondary{
+	margin-top: 20px;
+}
+#secondary .box{
+	display: flex;
+	align-items:top;
+	float: left;
+	text-align: left;
+	width: 30%;
+	padding: 10px 0;
+}
+#secondary img{
+	display: inline;
+	width: 40%;
+}
+#secondary h3{
+	display: inline;
+	font-family: 'AbrilFatface', Arial, Helvetica, sans-serif; 
+	text-align: left;
+	font-size: 16px;
+	line-height: normal;
+	padding-left: 5px;
+}
+
 
 /*mobile*/
 @media(max-width: 768px){
@@ -102,58 +166,24 @@ header li .active {
 	header nav{
 		display: none;
 	}
-	header .icon-burger{
-		display: flex;
+	header .icon-burger img{
+		display: inline;
 	}
 
 	#main .box{
 		float:none;
-		text-align: center;
+		text-align: left;
+		width: 100%;
+	}
+	#secondary .box{
+		float:none;
+		text-align: left;
 		width: 100%;
 	}
 }
 
 
 
-
-
-
-
-
-header .menu-icon img{
-	height: 40px;
-	filter: invert(70%);
-}
-header .icon-burger img{
-	display: none;
-	float: left;
-}
-/*
-header .icon-search img{
-	float: right;
-}
-header .button-login{
-	float: right;
-}
-.my-header .logo img{
-	height: 100px;
-}
-.menu-button{
-	background-color: white;
-	border: 2px solid #555555;
-	color: black;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	cursor: pointer;
-	height: 40px;
-	width: 80px;
-}  
-.menu-button:hover {
-	background-color: #555555;
-	color: white;
-}
 
  
 
