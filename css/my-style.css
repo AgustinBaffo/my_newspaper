@@ -121,20 +121,145 @@ header li .active {
 	text-align: left;
 	padding: 0 16px 4px 16px;	
 }
+
+#weather{
+	border-bottom: 1px solid grey;
+}
+#weather .box-temperature{
+	display: flex;
+	order: 1;
+	padding: 10px 0;
+	width: 50%;
+	margin-left: 5%;
+}
+ #weather .box-other{
+	display: flex;
+	order: 2;
+	padding: 10px 0;
+	width: 50%;	
+	margin-right: 5%; 
+}
+#weather .box-temperature img{
+	display: inline;
+	height: 100%;
+	max-height: 64px;
+}
+#weather .box-temperature .temp-value{
+	display: inline-flex;
+}
+#weather .box-temperature .value{
+	display: inline;
+	font-size: 56px;
+	vertical-align: top;
+}
+#weather .box-temperature .unit{
+	display: inline;
+	vertical-align: top;
+	font-size: 32px;
+}
+#weather .other-weather .prep,
+#weather .other-weather .hum,
+#weather .other-weather .wind{
+	display: inline-block;
+	padding: 2px;
+	font-size: 18px;
+}
+
+
+/*
+#main{
+	margin-top: 20px;
+	border-bottom: 1px solid grey;
+}
+#main .box{
+	float:none;
+	text-align: center;
+	width: 100%;
+	padding: 10px 0;
+	border-bottom: 1px solid grey;
+}
+#main .box:last-child{
+	border-bottom: 0;
+}
+#main a{
+	text-decoration: none;
+}
+#main a:visited{
+	color: black;
+}
+#main img{
+	width: 100%;
+}
+#main h2{
+	font-family: 'AbrilFatface', Arial, Helvetica, sans-serif; 
+	font-size: 24px;
+	font-weight: bold; 
+	line-height: normal;
+	padding: 8px;
+}
+#main p{
+	font-family: sans-serif; 
+	text-align: left;
+	font-size: 16px;
+	line-height: normal;
+	padding-top: 8px;
+}
+#secondary{
+	margin-top: 20px;
+	border-bottom: 1px solid grey;
+}
+#secondary a{
+	text-decoration: none;
+}
+#secondary a:visited{
+	color: black;
+}
+#secondary .box{
+	display: flex;
+	float:none;
+	text-align: left;
+	width: 100%;
+	padding: 10px 0;
+	align-items:top;
+	padding: 10px 0;
+	border-bottom: 1px solid grey;
+}
+#secondary .box:last-child{
+	border-bottom: 0;
+}
+#secondary img{
+	display: inline;
+	width:40%;
+	height: auto;
+	max-height: 150px;
+}
+#secondary h3{
+	display: inline;
+	font-family: 'AbrilFatface', Arial, Helvetica, sans-serif; 
+	text-align: left;
+	font-size: 16px;
+	line-height: normal;
+	padding-left: 5px;
+}*/
+
+
 footer .box-1{
 	padding: 10px 0;
 	width: 50%;
 	max-width: 250px;
+	margin-left: 5%;
 }
 footer .box-2{
 	display: inline-block;
 	padding: 10px 5px;
 	width: 50%;
+	margin-right: 5%;
 }
 footer .box-3{
 	display: flex;
 	padding: 10px 0;
 	width: 100%;
+	margin-left: 5%;
 }
 footer img{
 	width: 100%;
@@ -187,4 +312,41 @@ footer p{
 	#showcase .box-img{
 		width: 100%;
 	}
+
+	#weather .box-temperature{
+		width: 20%;
+		margin-left: 20%;
+	}
+	#weather .box-other{
+		width: 80%;	
+		margin-right: 20%; 
+		margin-left: 10%; 
+		justify-self: center;
+	}
+	#weather .box-temperature .value{
+		font-size: 56px;
+	}
+	#weather .other-weather .prep,
+	#weather .other-weather .hum,
+	#weather .other-weather .wind{
+		font-size: 24px;
+	}
+	#weather .other-weather{
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+	
+/*
+	#main .box{
+		float: left;
+		width: 30%;		
+	}
+	#secondary .box{
+		display: flex;
+		align-items:top;
+		float: left;
+		text-align: left;
+		width: 30%;
+		padding: 10px 0;
+	}*/
 }
