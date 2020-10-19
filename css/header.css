@@ -1,13 +1,3 @@
-@font-face{
-    font-family: AbrilFatface;
-	src: url(../fonts/AbrilFatface-Regular.ttf);
-} 
-.container{
-	display: flex;
-}
-.container .container-bottom{
-	align-items: flex-end;
-}
 header{
 	background-color: #333;
 	list-style-type: none;
@@ -18,8 +8,8 @@ header{
 header .container{
 	max-height: 50px;
 }
-header .box-1{	
-	display: flex;	
+header .box-1{
+	display: flex;
 	flex: 1;
 }
 header .box-2{
@@ -73,7 +63,7 @@ header li .active {
 	cursor: pointer;
 	height: 40px;
 	width: 80px;
-}  
+}
 .menu-button:hover {
 	background-color: #888;
 	color: white;
@@ -102,7 +92,7 @@ header li .active {
 	display: block;
 	width: 50%;
 	align-self: center;
-	min-width: 280px;  
+	min-width: 280px;
 }
 #showcase .box-1{
 	display: block;
@@ -112,14 +102,13 @@ header li .active {
 	display: block;
 }
 #showcase .date{
-	font-family: sans-serif; 
+	font-family: sans-serif;
 	color: #666;
 	display: block;
 	margin-top: 16px;
 	text-align: left;
-	padding: 0 16px 4px 16px;	
+	padding: 0 16px 4px 16px;
 }
-
 #weather{
 	border-bottom: 1px solid grey;
 }
@@ -134,8 +123,8 @@ header li .active {
 	display: flex;
 	order: 2;
 	padding: 10px 0;
-	width: 50%;	
-	margin-right: 5%; 
+	width: 50%;
+	margin-right: 5%;
 }
 #weather .box-temperature img{
 	display: inline;
@@ -162,142 +151,15 @@ header li .active {
 	padding: 2px;
 	font-size: 18px;
 }
-.main{
-	border-bottom: 1px solid grey;
-}
-.main .container{
-	flex-direction: column;
-}
-.main .box, .main .box-1{
-	display: flex;
-	text-align: center;
-	width: 95%;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
-	padding: 10px 0;
-	border-bottom: 1px solid grey;
-}
-.main .box:last-child{
-	border-bottom: 0;
-}
-.main a{
-	text-decoration: none;
-}
-.main a:visited{
-	color: black;
-}
-.main img{
-	width: 100%;
-}
-.main h2{
-	font-family: 'AbrilFatface', Arial, Helvetica, sans-serif; 
-	font-size: 24px;
-	font-weight: bold; 
-	line-height: normal;
-	padding: 8px;
-}
-.main p{
-	font-family: sans-serif; 
-	text-align: left;
-	font-size: 16px;
-	line-height: normal;
-	padding-top: 8px;
-}
-
-
-.secondary{
-	margin-top: 10px;
-	border-bottom: 1px solid grey;
-}
-.secondary .container{
-	flex-direction: column;
-}
-.secondary .box{
-	display: flex;
-	text-align: left;
-	width: 95%;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
-	padding: 10px 0;
-	border-bottom: 1px solid grey;
-}
-.secondary .box:last-child{
-	border-bottom: 0;
-}
-
-.secondary .sub-container{
-	display: flex;
-	flex-direction: row;	
-}
-.secondary .sub-box-img{
-	display: flex;
-	flex:1;
-	width: 48.75%;
-	min-width: 200px;	
-	max-height: 150px;
-	padding: 10px 0;
-	margin-left: 1.25%;
-}
-.secondary img{
-	width: 100%;
-	height: auto;
-}
-.secondary .sub-box-title{	
-	display: flex;
-	flex:3;
-	margin-left: 1.25%;
-	padding: 10px 0;
-}
-.secondary a{
-	text-decoration: none;
-}
-.secondary a:visited{
-	color: black;
-}
-.secondary h3{
-	display: inline;
-	font-family: 'AbrilFatface', Arial, Helvetica, sans-serif; 
-	text-align: left;
-	font-size: 16px;
-	line-height: normal;
-	padding-left: 5px;
-}
-footer .box-1{
-	padding: 10px 0;
-	width: 50%;
-	max-width: 250px;
-	margin-left: 5%;
-}
-footer .box-2{
-	display: inline-block;
-	padding: 10px 5px;
-	width: 50%;
-	margin-right: 5%;
-}
-footer .box-3{
-	display: flex;
-	padding: 10px 0;
-	width: 100%;
-	margin-left: 5%;
-}
-footer img{
-	width: 100%;
-	padding: 10px 2px 2px 5px;
-}
-footer p{
-	padding-bottom: 5px;
-	font-size: 14px;
-}
-
-@media(min-width: 768px){	
+@media(min-width: 768px){
 	header .icon-burger img{
 		display: none;
-	}	
+	}
 	header nav{
 		display: inline-block;
-	}	
-	header .box-1{	
-		display: flex;	
+	}
+	header .box-1{
+		display: flex;
 		flex: 10;
 	}
 	header .box-2{
@@ -322,13 +184,13 @@ footer p{
 		order: 2;
 		padding: 10px 0;
 		margin-right: 20px;
-		width: 50%;      
+		width: 50%;
 		justify-content: flex-end;
 		align-self: flex-end;
 	}
 	#showcase .img-logo img{
 		width: 390px;
-	}  
+	}
 	#showcase .box-img{
 		width: 100%;
 	}
@@ -338,9 +200,9 @@ footer p{
 		margin-left: 20%;
 	}
 	#weather .box-other{
-		width: 80%;	
-		margin-right: 20%; 
-		margin-left: 10%; 
+		width: 80%;
+		margin-right: 20%;
+		margin-left: 10%;
 		justify-self: center;
 	}
 	#weather .box-temperature .value{
@@ -354,37 +216,5 @@ footer p{
 	#weather .other-weather{
 		padding-top: 2%;
 		padding-bottom: 2%;
-	}
-	#content .news-container{
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		padding: 10px;
-	}
-	#content .news-container .box-news{
-		display: inline-block;
-		font-family: "Open Sans", Arial;
-		font-size: 20px;
-		text-align: center;
-		border-radius: 6px;
-		padding: 20px;
-		margin: 12px;
-	}
-	#content .news-container img{
-		width: 100%;
-	}
-	
-	#content .news-container .box-news:first-child{
-		width: 100%;
-		padding-left: 10%;
-		padding-right: 10%;
-		
-	}		
-	#content .news-container .box-news:not(:first-child){
-		flex: 2;
-	} 		
-	#content .news-container .box-news:last-child{
-		flex: 1;
-	} 
-
+    }
 }
