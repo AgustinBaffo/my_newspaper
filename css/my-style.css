@@ -4,8 +4,6 @@
 } 
 .container{
 	display: flex;
-	/* margin: auto;
-	overflow: hidden; */
 }
 .container .container-bottom{
 	align-items: flex-end;
@@ -132,7 +130,7 @@ header li .active {
 	width: 50%;
 	margin-left: 5%;
 }
- #weather .box-other{
+#weather .box-other{
 	display: flex;
 	order: 2;
 	padding: 10px 0;
@@ -164,14 +162,13 @@ header li .active {
 	padding: 2px;
 	font-size: 18px;
 }
-#main{
-	/* margin-top: 10px; */
+.main{
 	border-bottom: 1px solid grey;
 }
-#main .container{
+.main .container{
 	flex-direction: column;
 }
-#main .box{
+.main .box, .main .box-1{
 	display: flex;
 	text-align: center;
 	width: 95%;
@@ -180,26 +177,26 @@ header li .active {
 	padding: 10px 0;
 	border-bottom: 1px solid grey;
 }
-#main .box:last-child{
+.main .box:last-child{
 	border-bottom: 0;
 }
-#main a{
+.main a{
 	text-decoration: none;
 }
-#main a:visited{
+.main a:visited{
 	color: black;
 }
-#main img{
+.main img{
 	width: 100%;
 }
-#main h2{
+.main h2{
 	font-family: 'AbrilFatface', Arial, Helvetica, sans-serif; 
 	font-size: 24px;
 	font-weight: bold; 
 	line-height: normal;
 	padding: 8px;
 }
-#main p{
+.main p{
 	font-family: sans-serif; 
 	text-align: left;
 	font-size: 16px;
@@ -208,14 +205,14 @@ header li .active {
 }
 
 
-#secondary{
+.secondary{
 	margin-top: 10px;
 	border-bottom: 1px solid grey;
 }
-#secondary .container{
+.secondary .container{
 	flex-direction: column;
 }
-#secondary .box{
+.secondary .box{
 	display: flex;
 	text-align: left;
 	width: 95%;
@@ -224,15 +221,15 @@ header li .active {
 	padding: 10px 0;
 	border-bottom: 1px solid grey;
 }
-#secondary .box:last-child{
+.secondary .box:last-child{
 	border-bottom: 0;
 }
 
-#secondary .sub-container{
+.secondary .sub-container{
 	display: flex;
 	flex-direction: row;	
 }
-#secondary .sub-box-img{
+.secondary .sub-box-img{
 	display: flex;
 	flex:1;
 	width: 48.75%;
@@ -241,32 +238,30 @@ header li .active {
 	padding: 10px 0;
 	margin-left: 1.25%;
 }
-#secondary img{
+.secondary img{
 	width: 100%;
 	height: auto;
 }
-#secondary .sub-box-title{	
+.secondary .sub-box-title{	
 	display: flex;
 	flex:3;
 	margin-left: 1.25%;
 	padding: 10px 0;
 }
-#secondary a{
+.secondary a{
 	text-decoration: none;
 }
-#secondary a:visited{
+.secondary a:visited{
 	color: black;
 }
-#secondary h3{
+.secondary h3{
 	display: inline;
 	font-family: 'AbrilFatface', Arial, Helvetica, sans-serif; 
 	text-align: left;
 	font-size: 16px;
 	line-height: normal;
 	padding-left: 5px;
-}*/
-
-
+}
 footer .box-1{
 	padding: 10px 0;
 	width: 50%;
@@ -360,18 +355,36 @@ footer p{
 		padding-top: 2%;
 		padding-bottom: 2%;
 	}
-	
-/*
-	#main .box{
-		float: left;
-		width: 30%;		
-	}
-	#secondary .box{
+	#content .news-container{
 		display: flex;
-		align-items:top;
-		float: left;
-		text-align: left;
-		width: 30%;
-		padding: 10px 0;
-	}*/
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 10px;
+	}
+	#content .news-container .box-news{
+		display: inline-block;
+		font-family: "Open Sans", Arial;
+		font-size: 20px;
+		text-align: center;
+		border-radius: 6px;
+		padding: 20px;
+		margin: 12px;
+	}
+	#content .news-container img{
+		width: 100%;
+	}
+	
+	#content .news-container .box-news:first-child{
+		width: 100%;
+		padding-left: 10%;
+		padding-right: 10%;
+		
+	}		
+	#content .news-container .box-news:not(:first-child){
+		flex: 2;
+	} 		
+	#content .news-container .box-news:last-child{
+		flex: 1;
+	} 
+
 }
