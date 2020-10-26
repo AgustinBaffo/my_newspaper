@@ -36,7 +36,7 @@
 .main img{
 	width: 100%;
 }
-.main h2{
+.main h1{
 	font-family: 'AbrilFatface', Arial, Helvetica, sans-serif;
 	font-size: 24px;
 	font-weight: bold;
@@ -99,7 +99,7 @@
 .secondary a:visited{
 	color: black;
 }
-.secondary h3{
+.secondary h1{
 	display: inline;
 	font-family: 'AbrilFatface', Arial, Helvetica, sans-serif;
 	text-align: left;
@@ -139,7 +139,7 @@
     #news-content .news-container .box-news:last-child{
         flex: 1;
     }
-    #news-content .news-container .box-news:first-child h2{
+    #news-content .news-container .box-news:first-child h1{
         font-size: 48px;
     }
 }

@@ -104,8 +104,6 @@
     -webkit-transition:.5s;
     transition: .5s;
 }
-
-
 .footer-social-icons .social-icons .fa-facebook,
 .footer-social-icons .social-icons .fa-github,
 .footer-social-icons .social-icons .fa-rss,
@@ -118,7 +116,6 @@
 .footer-social-icons .social-icons .fa-twitter {
     padding:10px 12px;
 }
-
 .showcase-social-icons .social-icons .fa-facebook,
 .showcase-social-icons .social-icons .fa-github,
 .showcase-social-icons .social-icons .fa-rss,
@@ -131,11 +128,6 @@
 .showcase-social-icons .social-icons .fa-twitter {
     padding:3px 4px;
 }
-
-
-
-
-
 .social-icons .fa-github:hover {
     background-color: #5a32a3;
 }
