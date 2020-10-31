@@ -34,74 +34,57 @@ function init(){
         valCity(city.value);
         valPcode(pcode.value);
         valDNI(dni.value);
+        
+        //console.log(valName(fname.value));
+        //console.log(valEmail(email.value));
+        //console.log(valPass(pass.value));
+        //console.log(valCpass(pass.value, cpass.value));
+        //console.log(valAge(age.value));
+        //console.log(valPnum(pnum.value));
+        //console.log(valAddress(address.value));
+        //console.log(valCity(city.value));
+        //console.log(valPcode(pcode.value));
+        //console.log(valDNI(dni.value));
     });
 }
 
 function valName(str){
+    return (str.length >= 7 && str.indexOf(' ') != -1);
 };
 function valEmail(str){
+    let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(str);
 };
 function valPass(str){
+    let re = /^(?:[0-9]+[a-z]|[a-z]+[0-9])[a-z0-9]*$/i
+    return (re.test(str) && str.length >= 8);
 };
 function valCpass(p,cp){
+    return (valPass(p) && p==cp);
 };
 function valAge(str){
+    let re = /^[0-9]+$/
+    return (re.test(str) && str >= 18);
 };
 function valPnum(str){
+    let re = /^[0-9]+$/
+    return (re.test(str) && str.length >= 7);
 };
 function valAddress(str){
+
 };
 function valCity(str){
+    return str.length >= 3;
 };
 function valPcode(str){
+    return str.length >= 3;
 };
 function valDNI(str){
+    let re = /^[0-9]+$/
+    return (re.test(str) && str.length >= 7 && str.length <= 8);
 };
-
-
-
-
-
-
-
-
-
-
-
-/*window.onload = function() {
-    //init();
-    //doSomethingElse();
-    console.dir(document);
-    //alert("works!");
-  };
-
-  var button = document.getElementById('asd').addEventListener('click',function(){
-    //do something
-});
-
-var button = document.getElementById('asd').addEventListener('click',my_function);
-
-function my_function(e){
-    console.log(e);
-    console.log(e.type);
-    console.log(e.target);
-    console.log(e.target.id);
-}*/
-
-
-
-
 
  /*
 itemInput.addEventListener('focus',runEvent);
 itemInput.addEventListener('blur',runEvent);
  */
-/*
-var form = document.querySelector('form-input');
-form.addEventListener('submit',runEventForm);
-function runEventForm(e){  
-    e.preventDefault();
-    alert("submit");
-    console.log('event: ' + e.type);  
-}
-*/
