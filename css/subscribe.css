@@ -8,6 +8,14 @@
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
+h1{
+	font-family: 'AbrilFatface', Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: normal;
+	padding-bottom: 24px;
+	text-align: center;
+}
 .container{
 	display: flex;	
 }
@@ -58,6 +66,7 @@
 .button-submit{
 	width: 100%;
 	text-align: center;
+	padding-top: 12px;
 }
 
 input[type=submit] {
