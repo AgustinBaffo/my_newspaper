@@ -13,6 +13,18 @@ function init(){
     const city = document.getElementById('city');
     const pcode = document.getElementById('pcode');
     const dni = document.getElementById('dni');
+
+    const ifname = document.getElementById('img-fname');
+    const iemail = document.getElementById('img-email');
+    const ipass = document.getElementById('img-pass');
+    const icpass = document.getElementById('img-cpass');
+    const iage = document.getElementById('img-age');
+    const ipnum = document.getElementById('img-pnum');
+    const iaddress = document.getElementById('img-address');
+    const icity = document.getElementById('img-city');
+    const ipcode = document.getElementById('img-pcode');
+    const idni = document.getElementById('img-dni');
+    
     const btnSubmit = document.getElementById('btn-submit');
     const hello = document.getElementById('hello-name')
 
@@ -20,8 +32,22 @@ function init(){
     fname.addEventListener('keyup', function(e){ 
         hello.innerHTML = e.target.value.toUpperCase();
     });
-    
-    //Data validation
+
+    //Blur validation
+    fname.addEventListener('blur',function(){
+        if(!valName(this.value) && this.value != ''){
+            ifname.style.visibility = "visible";
+        }
+    });
+
+    //Clear errors
+    fname.addEventListener('focus',function(){
+        if( ifname.style.visibility = "visible"){
+            ifname.style.visibility = "hidden";
+        }
+    });
+
+    //Submit data validation
     btnSubmit.addEventListener('click',function(e){
         e.preventDefault();
         valName(fname.value);
